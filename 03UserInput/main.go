@@ -19,4 +19,20 @@ func main() {
 
 	fmt.Printf("Type of your rating %T", input)
 
+	// Simple user input
+
+	var num int
+
+	fmt.Println("Enter the number : - ")
+
+	_, err := fmt.Scan(&num)
+
+	// var result string
+
+	if err != nil {
+		fmt.Println("Error : ", err)
+	} else {
+		fmt.Println("Number is :-", num)
+	}
+
 }
